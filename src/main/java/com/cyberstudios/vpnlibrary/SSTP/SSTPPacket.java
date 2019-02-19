@@ -4,17 +4,20 @@ import com.cyberstudios.vpnlibrary.interfaces.PacketBuilder;
 
 public class SSTPPacket {
 
-    public static final int SSTP_VERSION = 10;
+    // VERSION 16 in binary is  0001 0000
+    // this resembles SSTP (v)     1.   0
+    public static final byte VERSION = 16;
 
-    /**
-     * Constant defining a SSTP control packet
-     */
-    public static final int SSTP_PACKET_TYPE_CONTROL = 1;
+    enum PacketType {
+        Control(1),
+        Data(0);
 
-    /**
-     * Constant defining a SSTP data packet
-     */
-    public static final int SSTP_PACKET_TYPE_DATA = 0;
+        int type = 0;
+
+        PacketType(int i) {
+            this.type = i;
+        }
+    }
 
     /**
      * SSTP Packet factory
@@ -28,7 +31,7 @@ public class SSTPPacket {
         private Packet data;
 
         private Builder setVersion(){
-            byte version = SSTP_VERSION;
+            byte version = VERSION;
             return this;
         }
 
@@ -36,6 +39,8 @@ public class SSTPPacket {
         public SSTPPacket build() {
             return null;
         }
+
+
     }
 
     public class ControlPacket extends Packet {
