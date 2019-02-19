@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58813cef-f725-4d04-9116-b8284cf6e8fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers/InterfaceUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers/SslHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Init.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Setup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Stop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Switch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/StatusListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/TransferSpeedListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/services/ConnectivityManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/services/NetworkUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vpnlibrary.iml" afterDir="false" />
+    <list default="true" id="fc9f4796-4cab-4932-b134-0530fee68cc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/Packet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PacketBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PreConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Pause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,30 +25,28 @@
     <session id="-991988706">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="24" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="3" />
-          <entry key="java" value="193" />
+          <entry key="java" value="1085" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="193" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="1085" />
         </counts>
       </usages-collector>
     </session>
@@ -69,37 +54,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Init.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Switch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PreConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="112">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/StatusListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/TransferSpeedListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="461">
+              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -107,52 +83,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="80">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributes.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+            <state relative-caret-position="352">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Pause.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PacketBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="224">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Resume.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/Packet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="512">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Stop.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributePacket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Setup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="64">
               <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
@@ -168,38 +145,25 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>int</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>short</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/TransferSpeedListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Connection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/VpnConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/InitVpnConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers/InterfaceUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Init.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PreConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributePacket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PacketBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/Packet.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2272" />
-    <option name="y" value="24" />
-    <option name="width" value="1430" />
-    <option name="height" value="806" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -207,6 +171,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -264,14 +230,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="/opt/android-sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cyberstudios.vpnlibrary.interfaces" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,19 +267,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="58813cef-f725-4d04-9116-b8284cf6e8fb" name="Default Changelist" comment="" />
-      <created>1550312106468</created>
+      <changelist id="fc9f4796-4cab-4932-b134-0530fee68cc5" name="Default Changelist" comment="" />
+      <created>1550555192281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1550312106468</updated>
+      <updated>1550555192281</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="24" width="2560" height="1056" extended-state="7" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" sideWeight="0.49837664" visible="true" weight="0.32975337" />
-      <window_info id="Structure" sideWeight="0.5016234" side_tool="true" visible="true" weight="0.32975337" />
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32977587" />
+      <window_info id="Structure" side_tool="true" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -321,7 +290,7 @@
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Build" weight="0.32896176" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
@@ -332,154 +301,78 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="416">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Start.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PreConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="112">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributePacket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers/InterfaceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/helpers/SslHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/services/NetworkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/services/ConnectivityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Setup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="64">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Stop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPControlPacket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Pause.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Init.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/Switch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/StatusListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/listeners/TransferSpeedListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="32">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        <state relative-caret-position="461">
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/interfaces/PacketBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cyberstudios/vpnlibrary/SSTP/SSTPPacket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

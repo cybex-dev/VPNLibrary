@@ -23,4 +23,7 @@ package com.cyberstudios.vpnlibrary.SSTP;
  * </ol>
  */
 public class SSTP {
+    class Builder {
+
+    }
 }
