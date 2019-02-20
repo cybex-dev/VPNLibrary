@@ -4,50 +4,47 @@ import com.cyberstudios.vpnlibrary.interfaces.PacketBuilder;
 
 public class SSTPPacket {
 
-    // VERSION 16 in binary is  0001 0000
-    // this resembles SSTP (v)     1.   0
-    public static final byte VERSION = 16;
+    private SSTPPacket() {
+    }
 
-    enum PacketType {
+    public enum PacketType {
         Control(1),
         Data(0);
 
-        int type = 0;
+        byte type = 0;
 
         PacketType(int i) {
-            this.type = i;
+            this.type = (byte) i;
         }
     }
 
-    /**
-     * SSTP Packet factory
-     */
-    class Builder implements PacketBuilder<SSTPPacket> {
+    public static class Builder implements PacketBuilder<SSTPPacket> {
+        private PacketType packetType;
+        private short encapsulationProtocolID;
+        private SSTPPacketHeader packetHeader = new SSTPPacketHeader();
+        private ByteChunk byteChunk;
 
-        // reserved for future use, must be 0;
-        byte reserved = 0;
+        public Builder(int packetDataByteSize) {
+            byteChunk = new ByteChunk(SSTPPacketHeader.BYTE_SIZE + packetDataByteSize);
+        }
 
-        // Contains the packet data to be sent
-        private Packet data;
+        public Builder setPacketType(PacketType control) {
+            this.packetType = control;
+            return this;
+        }
 
-        private Builder setVersion(){
-            byte version = VERSION;
+        public Builder withMessage() {
+            return this;
+        }
+
+        public Builder withEncapsulatedProtocolAttribute() {
+
             return this;
         }
 
         @Override
         public SSTPPacket build() {
-            return null;
+            packetHeader.setPacketType(packetType);
         }
-
-
-    }
-
-    public class ControlPacket extends Packet {
-
-    }
-
-    public class DataPacket extends Packet {
-
     }
 }
