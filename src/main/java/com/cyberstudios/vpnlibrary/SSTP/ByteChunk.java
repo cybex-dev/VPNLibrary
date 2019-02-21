@@ -60,4 +60,11 @@ public class ByteChunk {
     public boolean isEmpty(){
         return length == 0;
     }
+
+    public short getByteSize() {
+        if (length > SSTP.MAX_PACKET_SIZE) {
+            return -1;
+        }
+        return (short) length;
+    }
 }

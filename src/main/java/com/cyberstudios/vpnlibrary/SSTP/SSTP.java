@@ -29,6 +29,11 @@ public class SSTP {
     // this resembles SSTP (v)     1.   0
     public static final byte VERSION = 16;
 
+
+    // Maxium packet size allowed
+    // 00001111 11111111 = 4095 bytes
+    public static final int MAX_PACKET_SIZE = 4095;
+
     /**
      * Used in SSTP Control Packet to define the Control Packet purpose (message)
      */
@@ -146,15 +151,24 @@ public class SSTP {
     }
 
     public static class Encapsulation {
-        public static final  short SSTP_ENCAPSULATED_PROTOCOL_PPP = 0x0001;
+        public static final short SSTP_ENCAPSULATED_PROTOCOL_PPP = 0x0001;
     }
 
-    // Use variable sizeOf (int, short, etc)
-    // Add items to SSTPPacketBuilder and convert to byte chunks
+    /**
+     * This method sends a list of prtocols supported by the current system.
+     * <p>
+     * The response from the server can be either:
+     * <ul>
+     * <li></li>
+     * <li></li>
+     * </ul>
+     */
     public void sendAttribute_EncapsulatedProtocolIDAttribute() {
-        SSTPPacket.Builder packet = new SSTPPacket.Builder(2);
-        packet.withEncapsulatedProtocolAttribute();
-        packet.build();
+        // Creates a 8 byte ByteChunk in the Builder
+        SSTPPacket packet = new SSTPPacket.Builder(2)
+                .setPacketType(SSTPPacket.PacketType.Control)
+                .addBytes(Encapsulation.SSTP_ENCAPSULATED_PROTOCOL_PPP)
+                .build();
     }
 
     public void sendAttribute_CryptoBindingRequestAttribute() {

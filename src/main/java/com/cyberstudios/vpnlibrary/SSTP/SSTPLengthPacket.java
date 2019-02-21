@@ -37,6 +37,11 @@ public class SSTPLengthPacket {
     }
 
 
+    public SSTPLengthPacket(short byteSize) {
+        length = byteSize;
+    }
 
-
+    public ByteChunk getBytes(){
+        return null;
+    }
 }

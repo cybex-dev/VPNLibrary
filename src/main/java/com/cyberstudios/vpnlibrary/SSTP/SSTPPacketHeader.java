@@ -29,4 +29,12 @@ public class SSTPPacketHeader {
     public void setPacketType(SSTPPacket.PacketType packetType) {
         this.packetType = packetType;
     }
+
+    public void setDataLength(short byteSize) {
+        lengthPacket = new SSTPLengthPacket(byteSize);
+    }
+
+    public ByteChunk getBytes(){
+        return null;
+    }
 }
